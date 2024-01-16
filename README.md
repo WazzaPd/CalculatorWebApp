@@ -5,14 +5,14 @@ This is a straightforward web app for basic arithmetic calculations.
 
 ## Features
 - **Clean Interface:** Simple design for quick calculations.
-- **Basic Operations:** Addition, subtraction, multiplication, and division. <span style="color:red">(note: to be implemented)</span>
+- **Basic Operations:** Addition, subtraction, multiplication, and division. ***(note: to be implemented)***
 
 - **Responsive Design:** Works well on different screen sizes.
 
 ## How to Use
 1. **Access the Web App:** Visit [Calculator Web App](#) to start using it.
-2. **Input Numbers:** Use the on-screen keypad or your keyboard. <span style="color:red">(note: to be implemented)</span>
-3. **Select Operation:** Click on the operation button (addition, subtraction, multiplication, division). <span style="color:red">(note: to be implemented)</span>
+2. **Input Numbers:** Use the on-screen keypad or your keyboard. ***(note: to be implemented)***
+3. **Select Operation:** Click on the operation button (addition, subtraction, multiplication, division). ***(note: to be implemented)***
 4. **View Results:** The result will be displayed on the screen.
 
 ## Screenshots
