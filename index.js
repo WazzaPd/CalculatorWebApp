@@ -24,8 +24,14 @@ function handleNumericInput(value) {
     console.log('New Value: '+ currValue)
 }
 
-function handleOperatorInput() {
+function handleOperatorInput(value) {
+    if (!currValue) {
+        return
+    }
 
+    operations.push(currValue)
+    operations.push(value)
+    currValue = ''
 }
 
 function handleEvaluate() {
@@ -39,5 +45,7 @@ function handleReset() {
 }
 
 function updateUI() {
-    displayInput.innerText = currValue
+    const displayString = operations.join(' ') + ' ' +currValue
+    displayInput.innerText = displayString
+    console.log(operations)
 }
