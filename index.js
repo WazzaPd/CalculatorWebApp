@@ -20,8 +20,10 @@ function handleInteraction(value){
 }
 
 function handleNumericInput(value) {
+    if(value === '.' && currValue.includes('.')){
+        return
+    }
     currValue += value
-    console.log('New Value: '+ currValue)
 }
 
 function handleOperatorInput(value) {
