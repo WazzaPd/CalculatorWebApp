@@ -23,7 +23,11 @@ function handleNumericInput(value) {
     if(value === '.' && currValue.includes('.')){
         return
     }
-    currValue += value
+    if (typeof currValue === 'number') {
+        currValue = '' + value
+    } else {
+        currValue += value
+    }
 }
 
 function handleOperatorInput(value) {
