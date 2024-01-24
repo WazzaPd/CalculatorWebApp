@@ -5,7 +5,7 @@ const operators = ['-', '+', '%', '*', '/']
 let operations = []
 let currValue = ''
 
-//functions and Operations
+//Functions and Operations
 
 function handleInteraction(value){
     console.log(value)
@@ -35,17 +35,37 @@ function handleOperatorInput(value) {
 }
 
 function handleEvaluate() {
-
+    let finalAmount = operations[0]
+    let prevOperator = null
+    if(!currValue || operations.length === 0){
+        return
+    } else {
+        operations.push(currValue)
+        currValue = ''
+    }
+    
+    for(let i = 1; i < operations.length; i++){
+        if(i % 2 === 0){
+            //Numerical
+            finalAmount = eval(`${finalAmount} ${prevOperator} ${operations[i]}`)
+        } else {
+            //Operator
+            prevOperator = operations[i]
+        }
+    }
+    operations = []
+    currValue = finalAmount
+    updateUI()
 }
 
 function handleReset() {
     operations = []
     currValue = ''
-    displayInput.innerText = 0
+    updateUI()
 }
 
 function updateUI() {
     const displayString = operations.join(' ') + ' ' +currValue
-    displayInput.innerText = displayString
+    displayInput.innerText = displayString.trim() ? displayString : '0'
     console.log(operations)
 }
