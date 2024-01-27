@@ -25,4 +25,4 @@ This is a straightforward web app for basic arithmetic calculations.
 
 ## Future Plans
 This project is ongoing, and future plans may include:
-- Adding functionality to the calculator
+- Adding functionality to parentheses.
