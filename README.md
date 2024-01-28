@@ -18,6 +18,9 @@ This is a straightforward web app for basic arithmetic calculations.
 ## Screenshots
 ![Calculator Web App](public/CalculatorScreenshot.png)
 
+## Website
+Visit the deployed [website](https://calculatorbyjoseph.netlify.app/)
+
 ## Technologies
 - HTML5
 - CSS3
